@@ -29,7 +29,5 @@
   <Content zipEntry="Maps/USGSImageryOnly.xml" ignore="false" />
   <Content zipEntry="Maps/USGSImageryTopo.xml" ignore="false" />
   <Content zipEntry="Maps/USGSTopo.xml" ignore="false" />
-  <Content zipEntry="Plugins/ATAK-Plugin-datasync-1.3-7979b8e6-4.7.0-civ-release.apk" ignore="false" />
-  <Content zipEntry="Plugins/ATAK-Plugin-GeoTakCam-1.0-c304e879-4.7.0-civ-release.apk" ignore="false" />
 </Contents>
 </MissionPackageManifest>
