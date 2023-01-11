@@ -29,6 +29,5 @@
   <Content zipEntry="Maps/USGSImageryOnly.xml" ignore="false" />
   <Content zipEntry="Maps/USGSImageryTopo.xml" ignore="false" />
   <Content zipEntry="Maps/USGSTopo.xml" ignore="false" />
-  <Content zipEntry="Plugins/DataSync-1.1.0.0-4.7.0.163.wpk" ignore="false" />
 </Contents>
 </MissionPackageManifest>
