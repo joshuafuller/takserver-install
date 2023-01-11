@@ -39,3 +39,26 @@ On ubuntu machine change directory into cloned repository
 Start script and follow prompts closely:
 
     sudo bash start.sh
+    
+## 3. Networking
+FQDN's must point and be portforwarded on 8089 and 8446 (TCP) for basic operation of the server. Please refer to the TAK documentation for use of additional ports and federation.
+
+Web admin can be reached at https://FQDN:8446
+
+## 4. END USER DEVICE CERTIFICATE ENROLLMENT
+### 4.1 ATAK (Android)
+When attempting to connect to the takserver with certificate enrollment, you can "add a server" in ATAK or use the Quick Connect feature.  If using the "add server", the following information will be needed:
+1. Name: \[User Supplied\]
+2. URL:  DOMAIN
+3. Check "Enroll for Client Certficate" 
+	> **DO NOT CHECK "Use Authentication" for flat file authentication** (other authentication methods may require it such as LDAP, etc).
+
+If Using the Quick Connect option, you just need the address (DOMAIN) and the user credentials created TAK Server using the CLI or using the User-Management interface.
+
+### 4.2 iTAK (iOS)
+iTAK has two ways to utilize certificate enrollment - adding the server manually or by QR Code.  The information needed for either approach is:
+1. Name: `\[User Supplied\]`
+2. URL: `DOMAIN`
+3. Port:  `8089` (unless you have specified otherwise)
+4. Protocol:  `SSL`
+
