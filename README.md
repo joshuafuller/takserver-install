@@ -64,8 +64,8 @@ iTAK has two ways to utilize certificate enrollment - adding the server manually
 
 ## REPOSITORY NOTES
 
-Automatic certificate renew has not been fully implemented.
-For now you will need to renew and convert the public SSL cert prior to its expiration. This can be done via an embeded script in the repository.
+Automatic certificate renewal has not been fully implemented.
+For now, you will need to renew and convert the public SSL cert prior to its expiration. This can be done via an embeded script in the repository.
 > Would like to modify and add this as a cronjob in the future setup by this install script
 
 **Renewal Script POST install**
