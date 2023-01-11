@@ -5,7 +5,7 @@ Fully automated installation and provisioning of takserver 4.8 RELEASE31 on Ubun
 
 > **NOTE:** Installation script has been tested and assumes you are using Ubuntu 20.04 LTS and Cloudflare for public DNS. Some functions of the script allow for non public certificate configuration or obtaining public certs via certbot by http/s challenge. This has not been fully tested.
 
-This script assumes you have a working knowledge of the TAK software suite and basic linux commands. This repository does not contain any .deb packages for any TAK related product. Therefore, you must obtain and merge those packages within this cloned repository through tak.gov. This script assumes you are utilizing a 'single-server' installation.
+This script assumes you have a working knowledge of the TAK software suite and basic linux commands. This repository does not contain any packages for any TAK related product. Therefore, you must obtain and merge those packages within this cloned repository through tak.gov. This script assumes you are utilizing a 'single-server' installation.
 
 ## 1. Clone Repository
 Clone this repository in your user's home directory
