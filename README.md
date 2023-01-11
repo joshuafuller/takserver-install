@@ -43,7 +43,7 @@ Start script and follow prompts closely:
 ## 3. Networking
 FQDN's must point and be portforwarded on 8089 and 8446 (TCP) for basic operation of the server. Please refer to the TAK documentation for use of additional ports and federation.
 
-Web admin can be reached at https://FQDN:8446
+Web admin can be reached at https://DOMAIN:8446
 
 ## 4. End User Device Certificate Enrollment
 ### 4.1 ATAK (Android)
