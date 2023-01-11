@@ -62,3 +62,13 @@ iTAK has two ways to utilize certificate enrollment - adding the server manually
 3. Port:  `8089` (unless you have specified otherwise)
 4. Protocol:  `SSL`
 
+## REPOSITORY NOTES
+
+Automatic certificate renew has not been fully implemented.
+For now you will need to renew and convert the public SSL cert prior to its expiration. This can be done via an embeded script in the repository.
+> Would like to modify and add this as a cronjob in the future setup by this install script
+
+**Renewal Script POST install**
+
+    sudo bash /opt/tak/certs/certbot-jks.sh
+    sudo systemctl restart takserver
