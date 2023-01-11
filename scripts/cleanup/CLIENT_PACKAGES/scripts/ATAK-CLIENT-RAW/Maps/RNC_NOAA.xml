@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<customWmsMapSource>
+  <name>NOAA_RNC_Marine</name>
+  <minZoom>0</minZoom>
+  <maxZoom>18</maxZoom>
+  <tileType>jpg</tileType>
+  <url>https://seamlessrnc.nauticalcharts.noaa.gov/arcgis/services/RNC/NOAA_RNC/ImageServer/WMSServer</url>
+  <coordinatesystem>EPSG:3857</coordinatesystem>
+  <layers>NOAA_RNC</layers>
+  <styles>default</styles>
+  <north>89</north>
+  <east>179.999989</east>
+  <south>-14.647994</south>
+  <west>-179.999989</west>
+  <backgroundColor>#000000</backgroundColor>
+</customWmsMapSource>

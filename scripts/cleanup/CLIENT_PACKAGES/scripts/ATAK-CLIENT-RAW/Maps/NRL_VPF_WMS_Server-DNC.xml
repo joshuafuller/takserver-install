@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customWmsMapSource>
+    <name>NRL.NavyDNC-Marine</name>
+    <minZoom>0</minZoom>
+    <maxZoom>18</maxZoom>
+    <tileType>jpg</tileType>
+    <url>https://geoint.nrlssc.navy.mil/dnc/wms/DNC-WORLD/basemap/DNC-BASEMAP?</url>
+    <coordinatesystem>EPSG:3857</coordinatesystem>
+    <layers>DNC-BASEMAP</layers>
+    <styles>default</styles>
+    <north>90.0</north>
+    <east>180.0</east>
+    <south>-90.0</south>
+    <west>-180.0</west>
+    <backgroundColor>#000000</backgroundColor>
+</customWmsMapSource>

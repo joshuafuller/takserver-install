@@ -1,0 +1,1 @@
+sudo java -jar /opt/tak/utils/UserManager.jar usermod -p TAK-USERPASSWORD -g default CLIENT_CERT

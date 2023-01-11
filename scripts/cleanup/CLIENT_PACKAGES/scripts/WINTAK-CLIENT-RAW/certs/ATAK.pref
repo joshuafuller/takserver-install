@@ -1,0 +1,7 @@
+<?xml version='1.0' standalone='yes'?>
+<preferences>
+<preference version="1" name="com.atakmap.app_preferences">
+<entry key="MobileLayerSelectionAdapter.selected" class="class java.lang.String">GoogleHybrid</entry>
+<entry key="displayServerConnectionWidget" class="class java.lang.Boolean">true</entry>
+</preference>
+</preferences>

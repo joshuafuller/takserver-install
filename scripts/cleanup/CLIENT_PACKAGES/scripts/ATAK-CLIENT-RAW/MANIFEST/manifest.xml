@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MissionPackageManifest version="2">
+<Configuration>
+  <Parameter name="name" value="VAR_ORGANIZATION" />
+  <Parameter name="uid" value="RANDOM_UID" />
+</Configuration>
+<Contents>
+  <Content zipEntry="Certs/ATAK.pref" ignore="false" />
+  <Content zipEntry="Certs/CREN.pref" ignore="false" />
+  <Content zipEntry="Certs/CLIENT_CERT.p12" ignore="false" />
+  <Content zipEntry="Certs/truststore-ca.DOMAIN.p12" ignore="false" />
+  <Content zipEntry="Maps/GOOGLEHybrid.xml" ignore="false" />
+  <Content zipEntry="Maps/GOOGLESat.xml" ignore="false" />
+  <Content zipEntry="Maps/GOOGLEStreetMapALT.xml" ignore="false" />
+  <Content zipEntry="Maps/GOOGLEStreetMap.xml" ignore="false" />
+  <Content zipEntry="Maps/GOOGLETerrainRAW.xml" ignore="false" />
+  <Content zipEntry="Maps/GOOGLETerrain.xml" ignore="false" />
+  <Content zipEntry="Maps/NRL-DRG-Auto.xml" ignore="false" />
+  <Content zipEntry="Maps/NRL-DRG-Mosaic.xml" ignore="false" />
+  <Content zipEntry="Maps/NRL_ENC-Basemap.xml" ignore="false" />
+  <Content zipEntry="Maps/NRL-FAA-Sectionals.xml" ignore="false" />
+  <Content zipEntry="Maps/NRL-FAA-TACs.xml" ignore="false" />
+  <Content zipEntry="Maps/NRL-FAA-WACs.xml" ignore="false" />
+  <Content zipEntry="Maps/NRL-NAIP-CONUS.xml" ignore="false" />
+  <Content zipEntry="Maps/NRL-OpenStreetMap.xml" ignore="false" />
+  <Content zipEntry="Maps/NRL_VPF_WMS_Server-DNC.xml" ignore="false" />
+  <Content zipEntry="Maps/openstreetmap.xml" ignore="false" />
+  <Content zipEntry="Maps/RNC_NOAA.xml" ignore="false" />
+  <Content zipEntry="Maps/USGSImageryOnly.xml" ignore="false" />
+  <Content zipEntry="Maps/USGSImageryTopo.xml" ignore="false" />
+  <Content zipEntry="Maps/USGSTopo.xml" ignore="false" />
+  <Content zipEntry="Plugins/ATAK-Plugin-datasync-1.3-7979b8e6-4.7.0-civ-release.apk" ignore="false" />
+  <Content zipEntry="Plugins/ATAK-Plugin-GeoTakCam-1.0-c304e879-4.7.0-civ-release.apk" ignore="false" />
+</Contents>
+</MissionPackageManifest>

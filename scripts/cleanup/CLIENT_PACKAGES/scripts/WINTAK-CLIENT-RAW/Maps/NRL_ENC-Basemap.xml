@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<customWmsMapSource>
+  <name>NRL-ENC.MarineChart</name>
+  <minZoom>0</minZoom>
+  <maxZoom>18</maxZoom>
+  <tileType>jpg</tileType>
+  <url>https://geoint.nrlssc.navy.mil/enc/wms/ENC/basemap/ENC-BASEMAP?</url>
+  <coordinatesystem>EPSG:3857</coordinatesystem>
+  <layers>ENC-BASEMAP</layers>
+  <styles>default</styles>
+  <north>90</north>
+  <east>180</east>
+  <south>-90</south>
+  <west>-180</west>
+  <backgroundColor>#000000</backgroundColor>
+</customWmsMapSource>
