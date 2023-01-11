@@ -12,7 +12,7 @@ Clone this repository in your user's home directory
 
     sudo apt install git -y
     cd
-    sudo git clone https://github.com/tstechnologies/takserver-install.git
+    git clone https://github.com/tstechnologies/takserver-install.git
 
 ## 1.1. Download and transfer software package, policy, and key from TAK.gov
 **FILES TO OBTAIN:**
