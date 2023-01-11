@@ -10,7 +10,7 @@ echo " "
 echo " "
 sleep 2
 takserver_setup_description1="The following script will install and prompt you for several inputs in order to setup a fully functional tak server"
-takserver_setup_description2="At this time the script does not validate any of your inputs. Therefore, if a mistake is made you will need to wipe and start with a fresh install of rocky linux 8 in order to effectively use this script again"
+takserver_setup_description2="At this time the script does not validate any of your inputs. Therefore, if a mistake is made you will need to wipe and start with a fresh install of Ubuntu/Debian in order to effectively use this script again"
 takserver_setup_description3="Please read and enter data carefully"
 printf '%s\n' "$takserver_setup_description1" | fold -s
 echo " "
