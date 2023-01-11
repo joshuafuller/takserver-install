@@ -6,7 +6,7 @@ echo " "
 
 sudo mkdir temp
 sleep 1
-cloudflare_api_description1="To get your cloudflare API KEY. Goto cloudflare dns then click get api key. Create Custom Token. Name it appropriately."
+cloudflare_api_description1="To get your cloudflare API KEY, go to cloudflare.com. Then in your profile Click API tokens. Create Custom Token and name it appropriately."
 cloudflare_api_description2="Permissions: Zone:DNS:Edit"
 cloudflare_api_decriptions3="Zone Resources: Include:Specific zone:<insert root hostname here>"
 
