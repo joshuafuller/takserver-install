@@ -45,7 +45,7 @@ FQDN's must point and be portforwarded on 8089 and 8446 (TCP) for basic operatio
 
 Web admin can be reached at https://FQDN:8446
 
-## 4. END USER DEVICE CERTIFICATE ENROLLMENT
+## 4. End User Device Certificate Enrollment
 ### 4.1 ATAK (Android)
 When attempting to connect to the takserver with certificate enrollment, you can "add a server" in ATAK or use the Quick Connect feature.  If using the "add server", the following information will be needed:
 1. Name: \[User Supplied\]
