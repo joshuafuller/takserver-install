@@ -57,6 +57,8 @@ If enabled add following ports at minimum for external access:
     sudo ufw allow 8089/tcp #TAK TLS connector
     sudo ufw allow 22/tcp #SSH access to machine
 
+Refer to UFW documentation for further details and additional configuration: https://www.digitalocean.com/community/tutorials/ufw-essentials-common-firewall-rules-and-commands
+
 ## 4. End User Device Certificate Enrollment
 ### 4.1 ATAK (Android)
 When attempting to connect to the takserver with certificate enrollment, you can "add a server" in ATAK or use the Quick Connect feature.  If using the "add server", the following information will be needed:
