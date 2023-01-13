@@ -45,6 +45,18 @@ FQDN's must point and be portforwarded on 8089 and 8446 (TCP) for basic operatio
 
 Web admin can be reached at https://DOMAIN:8446
 
+> **NOTE FOR UBUNTU FIREWALL**
+
+If using ubuntu wth a gui or firewall enabled (ufw is default in 20.04 and typically enabled on VPS's). UFW status can be verified by command:
+    
+    sudo ufw status
+
+If enabled add following ports at minimum for external access:
+
+    sudo ufw allow 8446/tcp #certificate enrollment port
+    sudo ufw allow 8089/tcp #TAK TLS connector
+    sudo ufw allow 22/tcp #SSH access to machine
+
 ## 4. End User Device Certificate Enrollment
 ### 4.1 ATAK (Android)
 When attempting to connect to the takserver with certificate enrollment, you can "add a server" in ATAK or use the Quick Connect feature.  If using the "add server", the following information will be needed:
