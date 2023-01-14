@@ -15,7 +15,7 @@ sudo sed -i '70 i \            keystoreFile="certs/files/ca.DOMAIN-signing.jks"'
 sudo sed -i '71 i \            keystorePass="atakatak"' /opt/tak/CoreConfig.xml
 sudo sed -i '72 i \            signatureAlg="SHA256WithRSA"' /opt/tak/CoreConfig.xml
 sudo sed -i '73 i \            CAkey="/opt/tak/certs/files/ca.DOMAIN"' /opt/tak/CoreConfig.xml
-sudo sed -i '74 i \            CAcertificate="/opt/tak/certs/files/ca.DOMAIN.us"/>' /opt/tak/CoreConfig.xml
+sudo sed -i '74 i \            CAcertificate="/opt/tak/certs/files/ca.DOMAIN"/>' /opt/tak/CoreConfig.xml
 sudo sed -i '75 i \    </certificateSigning>' /opt/tak/CoreConfig.xml
 sudo sed -i '77d' /opt/tak/CoreConfig.xml
 sudo sed -i '77 i \        <tls' /opt/tak/CoreConfig.xml
