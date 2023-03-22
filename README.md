@@ -87,4 +87,4 @@ For now, you will need to renew and convert the public SSL cert prior to its exp
     sudo bash /opt/tak/certs/certbot-jks.sh
     sudo systemctl restart takserver
     
-Need to add script to increase memory usage and buffer on postgresql
+~~Need to add script to increase memory usage and buffer on postgresql~~ FIXED AND WAITING FOR FEEDBACK/VALIDATION
