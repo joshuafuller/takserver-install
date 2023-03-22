@@ -35,6 +35,12 @@ sudo cp -r CLIENT_PACKAGES /opt/tak/
 sleep 1
 sudo rm -r temp
 sleep 2
+echo " "
+echo "Increasing PostgreSQL Connections"
+sleep 5
+sudo bash increase_postgresql_connections.sh
+sleep 2
+echo " "
 echo "Restarting the service"
 echo " "
 sleep 5
