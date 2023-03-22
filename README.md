@@ -1,6 +1,4 @@
 ## **TAK-Server Installation Script**
-!! UNDER DEVELOPMENT !!
-
 Fully automated installation and provisioning of takserver 4.8 RELEASE31 on Ubuntu
 
 > **NOTE:** Installation script has been tested and assumes you are using Ubuntu 20.04 LTS and Cloudflare for public DNS. Some functions of the script allow for non public certificate configuration or obtaining public certs via certbot by http/s challenge. This has not been fully tested.
