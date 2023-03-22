@@ -16,8 +16,11 @@ Clone this repository in your user's home directory
 
 ## 1.1. Download and transfer software package, policy, and key from TAK.gov
 **FILES TO OBTAIN:**
+
 takserver_4.8-RELEASE31_all.deb
+
 deb_policy.pol
+
 taskerver-public-gpg.key
 
 Place the downloaded files in the ROOT of this cloned repository.
