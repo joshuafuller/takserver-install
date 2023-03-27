@@ -81,12 +81,6 @@ iTAK has two ways to utilize certificate enrollment - adding the server manually
 
 **CHANGES MADE FOR AUTO RENEWAL AWAITING VALIDATION**
 ~~Automatic certificate renewal has not been fully implemented.~~
-~~For now, you will need to renew and convert the public SSL cert prior to its expiration. This can be done via an embeded script in the repository.~~
-~~ > Would like to modify and add this as a cronjob in the future setup by this install script~~
-
-~~ **Renewal Script POST install** ~~
-
-    sudo bash /opt/tak/certs/certbot-jks.sh
-    sudo systemctl restart takserver
-    
-~~Need to add script to increase memory usage and buffer on postgresql~~ FIXED AND WAITING FOR FEEDBACK/VALIDATION
+~~For now, you will need to renew and convert the public SSL cert prior to its expiration. This can be done via an embeded script in the repository.~~   
+**FIXED AND WAITING FOR FEEDBACK/VALIDATION**
+~~Need to add script to increase memory usage and buffer on postgresql~~ 
