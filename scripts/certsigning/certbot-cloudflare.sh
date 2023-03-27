@@ -1,24 +1,3 @@
-clear
-sleep 3
-echo " "
-echo "CERTBOT-CLOUDFLARE API CHALLENGE"
-echo " "
-
-sudo mkdir temp
-sleep 1
-cloudflare_api_description1="To get your cloudflare API KEY, go to cloudflare.com. Then in your profile Click API tokens. Create Custom Token and name it appropriately."
-cloudflare_api_description2="Permissions: Zone:DNS:Edit"
-cloudflare_api_decriptions3="Zone Resources: Include:Specific zone:<insert root hostname here>"
-
-printf '%s\n' "$cloudflare_api_description1" | fold -s
-echo " "
-printf '%s\n' "$cloudflare_api_description2" | fold -s
-echo " "
-printf '%s\n' "$cloudflare_api_description3" | fold -s
-sleep 2
-
-echo -n "Please enter your cloudflare API token : "
-read -r API_TOKEN
 echo "$API_TOKEN" > temp/apitoken.txt
 echo " "
 sleep 1
@@ -27,6 +6,7 @@ sudo cp cloudflare-raw.ini temp/cloudflare.ini
 sudo cp getcert-cloudflare-raw.sh temp/getcert-cloudflare.sh
 sudo cp CoreConfig.xml-certsigning-raw.sh temp/CoreConfig.xml-certsigning.sh
 sudo cp certbot-jks-raw.sh temp/certbot-jks.sh
+sudo cp autorenwal-raw.sh temp/autorenewal.sh
 
 cd ..
 
@@ -42,6 +22,7 @@ sed -i "s/VAR_ORGANIZATION/$(cat temp/var_organization.txt)/g" temp/CoreConfig.x
 sed -i "s/VAR_ORGUNIT/$(cat temp/var_orgunit.txt)/g" temp/CoreConfig.xml-certsigning.sh
 sed -i "s/DOMAIN/$(cat temp/domain.txt)/g" temp/getcert-cloudflare.sh
 sed -i "s/DOMAIN/$(cat temp/domain.txt)/g" temp/certbot-jks.sh
+sed -i "s/FQDN/$(cat temp/domain.txt)/g" temp/autorenewal.sh
 sleep 2
 
 mkdir -p ~/.secrets/certbot/
@@ -52,7 +33,7 @@ sudo chmod 600 ~/.secrets/certbot/cloudflare.ini
 echo "We will now attempt to get a certificate from certbot using the API key you entered above"
 echo " "
 sleep 1
-echo "This will take approximg 90 seconds to complete"
+echo "This will take approximately 90 seconds to complete"
 echo " "
 sleep 1
 echo "Press enter when you are ready to continue..."
@@ -68,8 +49,16 @@ sleep 1
 sudo bash temp/certbot-jks.sh 
 sleep 1
 sudo cp temp/certbot-jks.sh /opt/tak/certs
+sudo cp temp/autorenwal.sh /opt/tak/certs
+sudo chmod +x /opt/tak/certs/autorenewal.sh
 sleep 1
-(sudo crontab -l; echo "0 03 15 * * /opt/tak/certs/certbot-jks.sh")|awk '!x[$0]++'|crontab - 
+echo " "
+echo "Creating cronjob for Autorenewal of Certs"
+echo " "
+sleep 1
+sudo bash crontab.sh
+sleep 1
+echo " "
 echo " "
 echo "Now modifying the CoreConfig.xml"
 echo " "
